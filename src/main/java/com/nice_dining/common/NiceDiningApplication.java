@@ -1,13 +1,13 @@
-package com.project.booking;
+package com.nice_dining.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookingProjectApplication {
+public class NiceDiningApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BookingProjectApplication.class, args);
+		SpringApplication.run(NiceDiningApplication.class, args);
 	}
 
 }
