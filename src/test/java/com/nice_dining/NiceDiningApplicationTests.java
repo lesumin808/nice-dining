@@ -1,4 +1,4 @@
-package com.nice_dining.common;
+package com.nice_dining;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
