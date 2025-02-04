@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="restInfo.css">
     <title>식당정보</title>
 </head>
 <body>
@@ -18,8 +19,65 @@
   </nav>
   <!-- 메인 -->
   <main>
+    <!-- 이미지 -->
     <section>
+        <div>이미지</div>
     </section>
+    <!-- 상호명 -->
+    <section>
+        <div>
+          <h3>상호명 음식점 이름</h3>
+        </div>
+        <div>
+          <button>내 정보 수정하기</button>
+          <button>예약 가능 시간 수정</button>
+        </div>
+    </section>
+    <!-- 메뉴 -->
+    <nav>
+      <button>홈</button>
+      <button>메뉴</button>
+      <button>정보</button>
+      <button>리뷰</button>
+    </nav>
+    <!-- 정보 섹션 -->
+    <section>
+      <!-- 홈 -->
+      <div>
+        <ul>
+          <li>위치</li>
+          <li>운영시간
+            <ul>
+              <li>월요일: 09:00 ~ 18:00</li>
+              <li>화요일: 09:00 ~ 18:00</li>
+              <li>수요일: 09:00 ~ 18:00</li>
+            </ul>
+          </li>
+          <li>전화번호</li>
+        </ul>
+      </div>
+      <!-- 메뉴 -->
+      <div>
+        <ul>
+          <li><span>이미지</span><span>메뉴명1</span></li>
+          <li><span>이미지</span><span>메뉴명2</span></li>
+        </ul>
+      </div>
+      <!-- 정보 -->
+      <div>
+        <ul>
+          <li>소개</li>
+        </ul>
+      </div>
+      <!-- 리뷰 -->
+      <div>
+        <ul>
+          <li>리뷰1</li>
+        </ul>
+      </div>
+    </section>
+
+
   </main>
   <!-- 푸터 -->
   <footer>
