@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .btn-lg-custom {
-      width: calc(100px + 20px); /* 기존 버튼보다 20px 증가 */
+      width: calc(100px + 20px);
     }
   </style>
 </head>
@@ -63,6 +63,38 @@
                         </div>
                     </div>
                 `).join(""));
+
+      function addRow() {
+        const menuContainer = document.getElementById("menuContainer");
+
+        const menuItem = document.createElement("div");
+        menuItem.classList.add("border", "p-3", "mb-2", "menu-item");
+
+        menuItem.innerHTML = `
+        <input class="form-check-input me-2" type="checkbox">
+        <div class="mb-2">
+            <label class="form-label">메뉴</label>
+            <input type="text" class="form-control" placeholder="메뉴 이름">
+        </div>
+        <div>
+            <label class="form-label">가격</label>
+            <input type="text" class="form-control" placeholder="16,000">
+        </div>
+    `;
+
+        menuContainer.appendChild(menuItem);
+      }
+
+      function deleteSelected() {
+        const menuContainer = document.getElementById("menuContainer");
+        const checkboxes = menuContainer.querySelectorAll(".menu-item input[type='checkbox']");
+
+        checkboxes.forEach(checkbox => {
+          if (checkbox.checked) {
+            checkbox.parentElement.remove();
+          }
+        });
+      }
     </script>
   </div>
 
