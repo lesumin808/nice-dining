@@ -1,4 +1,4 @@
-package com.nice_dining.common;
+package com.nice_dining;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
