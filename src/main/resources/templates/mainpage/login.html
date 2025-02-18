@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/static/mainpage/login.css">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-box">
+        <h2>로그인</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="아이디" required>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="rememberMe"> 로그인 상태 유지</label>
+                <label><input type="checkbox" name="saveId"> 아이디 저장</label>
+            </div>
+            <button type="submit" class="login-btn">로그인</button>
+        </form>
+        <div class="social-login">
+            <p>Or</p>
+            <button class="google-btn">구글로 로그인</button>
+            <button class="naver-btn">네이버로 로그인</button>
+            <button class="kakao-btn">카카오로 로그인</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
