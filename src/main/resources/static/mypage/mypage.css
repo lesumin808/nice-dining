@@ -1,0 +1,135 @@
+/* 전체 레이아웃 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* 상단바 */
+.topbar {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+/* 컨테이너 (전체 레이아웃 설정) */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* 왼쪽 사이드 메뉴 */
+.sidebar {
+    width: 200px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    background: #004466;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-btn:hover {
+    background: #002a33;
+}
+
+/* 메인 컨텐츠 */
+.content {
+    flex: 1;
+}
+
+/* 공통 박스 스타일 */
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-box h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #004466;
+}
+
+/* 리뷰 스타일 */
+.review-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-item p {
+    margin: 5px 0;
+}
+
+/* 버튼 스타일 */
+.more-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.more-btn:hover {
+    background: #006666;
+}
+
+.delete-btn {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background: #990000;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-btn {
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .content {
+        width: 90%;
+    }
+}

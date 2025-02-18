@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="/static/mypage/mypage.css">
+</head>
+<body>
+
+<!-- 상단바 -->
+<header class="topbar">
+    <h1>마이페이지</h1>
+</header>
+
+<!-- 전체 컨테이너 -->
+<div class="container">
+
+    <!-- 왼쪽 사이드 메뉴 -->
+    <aside class="sidebar">
+        <button class="menu-btn">MY 예약</button>
+        <button class="menu-btn">MY 리뷰</button>
+        <button class="menu-btn">MY 프로필</button>
+    </aside>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="content">
+
+        <!-- 내 정보 -->
+        <section class="info-box">
+            <h2>내 정보</h2>
+            <p>닉네임: <strong>사용자123</strong></p>
+            <p>가입 날짜: <strong>2024-01-01</strong></p>
+            <p>총 예약 건수: <strong>5건</strong></p>
+            <p>작성한 리뷰: <strong>3개</strong></p>
+        </section>
+
+        <!-- 예약 현황 -->
+        <section class="info-box">
+            <h2>예약 현황</h2>
+            <p>2024-11-16 16:00 <strong>토카츠집</strong> 예약</p>
+            <p>2024-11-21 10:00 <strong>스시집</strong> 예약</p>
+            <button class="more-btn">더보기</button>
+        </section>
+
+        <!-- 내 리뷰 -->
+        <section class="info-box">
+            <h2>내 리뷰</h2>
+            <div class="review-item">
+                <p>2024-10-05 10:00 <strong>메밀국수집</strong> ★★★★★</p>
+                <p>불정. 한층된 국물맛 끝내줘요</p>
+                <button class="delete-btn">삭제</button>
+            </div>
+
+            <div class="review-item">
+                <p>2024-10-03 12:00 <strong>햇용식당</strong> ★★★★☆</p>
+                <p>가게가 깔끔해요</p>
+                <button class="delete-btn">삭제</button>
+            </div>
+
+            <button class="more-btn">더보기</button>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
